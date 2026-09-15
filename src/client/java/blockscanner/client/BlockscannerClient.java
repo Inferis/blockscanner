@@ -36,7 +36,7 @@ public class BlockscannerClient implements ClientModInitializer {
 	private void initializeKeyMapping() {
 		scannerActiveKeyMapping = KeyMappingHelper.registerKeyMapping(new KeyMapping(
 				"key.blockscanner.active",
-				InputConstants.Type.KEYBOARD,
+				InputConstants.Type.KEYSYM,
 				InputConstants.KEY_K,
 				KEYS_CATEGORY
 		));
