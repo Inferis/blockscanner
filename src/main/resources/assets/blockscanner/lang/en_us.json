@@ -1,4 +1,6 @@
 {
+  "key.category.blockscanner.keys": "Block Scanner",
+  "key.blockscanner.active": "Scanner activation",
   "item.blockscanner.scanner": "Scanner",
   "menu.blockscanner.scanner.title": "Scanner",
   "tooltip.blockscanner.scanner.scans_for": "Scans for",
