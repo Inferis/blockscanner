@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"package": "blockscanner.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"InventoryMixin",
+		"EntityMixin",
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

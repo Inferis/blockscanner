@@ -1,0 +1,12 @@
+{
+  "item.blockscanner.scanner": "Scanner",
+  "menu.blockscanner.scanner.title": "Scanner",
+  "tooltip.blockscanner.scanner.scans_for": "Scans for",
+  "tooltip.blockscanner.scanner.nothing": "Nothing",
+  "tooltip.blockscanner.scanner.active": "Active",
+  "tooltip.blockscanner.scanner.inactive": "Inactive",
+  "message.blockscanner.scanner.single": "Scanner",
+  "message.blockscanner.scanner.multi": "Scanners",
+  "message.blockscanner.scanner.activated": "activated",
+  "message.blockscanner.scanner.deactivated": "deactivated"
+}

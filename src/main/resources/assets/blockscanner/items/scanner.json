@@ -1,0 +1,15 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:has_component",
+    "component": "blockscanner:active",
+    "on_true": {
+      "type": "minecraft:model",
+      "model": "blockscanner:item/scanner_active"
+    },
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "blockscanner:item/scanner_inactive"
+    }
+  }
+}
