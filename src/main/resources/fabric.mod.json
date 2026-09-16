@@ -2,16 +2,16 @@
 	"schemaVersion": 1,
 	"id": "blockscanner",
 	"version": "${version}",
-	"name": "blockscanner",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Blockscanner",
+	"description": "This is a Minecraft mod that allows you to scan your surroundings for ore blocks.",
 	"authors": [
-		"Me!"
+		"Inferis"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://inferis.org/",
+		"sources": "https://github.com/Inferis/blockscanner"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/blockscanner/icon.png",
 	"environment": "*",
 	"entrypoints": {
