@@ -28,17 +28,12 @@ public class BlockPositionRenderer {
             poseStack.translate(-camera.position().x, -camera.position().y, -camera.position().z);
 
             var collector = context.submitNodeCollector();
-            var combinedShape = Shapes.empty();
             var shape = Shapes.create(-0.001, -0.001, -0.001, 1.001, 1.001, 1.001);
             for (var pos: positions) {
-                // Create combined shape to highlight
-                var outlinePosShape = shape.move(pos.getX(), pos.getY(), pos.getZ());
-                combinedShape = Shapes.joinUnoptimized(combinedShape, outlinePosShape, BooleanOp.OR);
+                var outlineShape = shape.move(pos.getX(), pos.getY(), pos.getZ());
+                // Ghost outline visible through occluding blocks (ALWAYS_PASS depth, translucent)
+                collector.submitShapeOutline(poseStack, outlineShape, BlockScannerRenderTypes.linesAlwaysPassDepth(), 0x6603ee41, 4.0f, true);
             }
-
-            // Ghost outline visible through occluding blocks (ALWAYS_PASS depth, translucent)
-            combinedShape = combinedShape.optimize();
-            collector.submitShapeOutline(poseStack, combinedShape, BlockScannerRenderTypes.linesAlwaysPassDepth(), 0x6603ee41, 6.0f, true);
 
             poseStack.popPose();
         });
