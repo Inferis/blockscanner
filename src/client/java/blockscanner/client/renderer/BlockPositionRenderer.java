@@ -18,10 +18,6 @@ public class BlockPositionRenderer {
     private List<BlockPos> positions = List.of();
 
     public BlockPositionRenderer() {
-        LevelRenderEvents.BEFORE_BLOCK_OUTLINE.register(DEFAULT_PHASE,(context, outlineRenderState) -> {
-            return positions.isEmpty();
-        });
-
         LevelRenderEvents.END_MAIN.register(DEFAULT_PHASE,context -> {
             if (positions.isEmpty()) return;
 
